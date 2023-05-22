@@ -1,0 +1,162 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(241, 240, 240);
+}
+
+p {
+    font-size: 20px;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 95, 67);
+}
+
+.list {
+    padding: 20px;
+    width: 450px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.s_1 {
+    background: white;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.edit {
+    display: none;
+}
+
+.edit.act {
+    display: block;
+    position: fixed;
+    left: 77%;
+    top: 10%;
+    background: white;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    padding: 20px;
+    padding-top: 5px;
+}
+.edit h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.remove {
+    display: flex;
+    justify-content: right;
+    
+}
+.remove p {
+    text-align: center;
+    padding: 5px;
+    background: rgb(219, 69, 69);
+    color: white;
+    border-radius: 5px;
+    width: 15%;
+    cursor: pointer;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-evenly;
+}
+.red, .blue, .white, .red_b, .blue_b, .white_b {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.red, .red_b{
+    background: red;
+}
+.blue, .blue_b {
+    background: rgb(106, 229, 233);
+}
+.white {
+    background: white;
+}
+.white_b {
+    background: #000;
+}
+
+.place {
+    display: flex;
+    background: white;
+    padding-top: 20px;
+}
+
+.place input {
+    width: 350px;
+    height: 30px;
+    margin-right: 30px;
+    border-radius: 10px 0px 5px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    font-size: 15px;
+}
+
+.place button {
+    background: rgb(0, 95, 67);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 20%;
+    border-radius: 0px 10px 10px 15px;
+    cursor: pointer;
+}
+
+.area {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgb(67 169 139);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.icon_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+.custom img, .delete img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 650px) {
+    .s_1 {
+        width: 90%;
+        padding: 20px;
+    }
+
+    body {
+        width:fit-content;
+        margin: 10px;
+    }
+}
